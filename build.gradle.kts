@@ -20,4 +20,9 @@ tasks.test {
     useTestNG {
         suites("src/test/resources/testng.xml")
     }
+
+    testLogging {
+        events("passed", "skipped", "failed")
+        showStandardStreams = true // Ensure standard output is shown
+    }
 }
